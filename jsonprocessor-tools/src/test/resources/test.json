@@ -1,0 +1,20 @@
+{
+   "id":1,
+   "name":"gpu",
+   "features":{
+    "id":"111",
+    "name":"gpu",
+     "abc" : {
+         "xyz1" : "111111",
+         "xyz2" : 22222,
+         "xyz3" : {
+             "xyz4" : {
+               "xtz5": "xyz5",
+                "xtz6" : "12344444"
+             },
+           "krish" : "hari"
+         }
+     },
+     "id1" : "ffffff"
+  }
+}

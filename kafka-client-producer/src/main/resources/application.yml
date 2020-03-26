@@ -1,0 +1,18 @@
+zookeeper:
+    host  : localhost:2181
+kafka.topicname : my_topic
+server:
+  port: 9000
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092
+      key-serializer: org.apache.kafka.common.serialization.LongSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      client-id: "movie-publisher-client-0"
+      acks: "all"
+      retries: 3
+
+
+logging:
+  file: /logs/kafka-producer.log

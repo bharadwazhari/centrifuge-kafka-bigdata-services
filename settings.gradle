@@ -1,0 +1,11 @@
+rootProject.name = 'ceterifuge-parent-project'
+include 'jsonprocessor-tools'
+include 'elasticsearch'
+include 'elasticsearchutils'
+include 'kafka-client-producer'
+include 'kafka-client-consumer'
+include 'custom-word-processor'
+include 'mytest-streams-standalone'
+include 'mytest-kafka-spring-stream'
+include 'tesnsorflow-proj-test'
+

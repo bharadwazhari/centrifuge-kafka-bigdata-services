@@ -1,0 +1,53 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.2.1.RELEASE'
+    id 'io.spring.dependency-management' version '1.0.8.RELEASE'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+compileJava {
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+}
+
+repositories {
+    mavenCentral()
+}
+
+test {
+    useJUnitPlatform()
+}
+
+bootJar {
+    mainClassName = 'com.springboot.kafka.streams.starter.DemoApplication'
+}
+
+dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.10'
+    implementation 'org.apache.commons:commons-collections4:4.4'
+    implementation 'org.apache.commons:commons-lang3:3.0'
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'org.projectlombok:lombok:1.18.10'
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch:2.2.1.RELEASE'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-webflux'
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+    implementation 'uk.co.jemos.podam:podam:7.1.0.RELEASE'
+    implementation 'org.springframework.kafka:spring-kafka:2.4.1.RELEASE'
+    implementation 'org.apache.kafka:kafka-clients:2.4.0'
+    implementation 'org.springframework.cloud:spring-cloud-stream:3.0.1.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka:3.0.1.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-stream-binder-kafka-streams:3.0.1.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-dependencies:Hoxton.SR1'
+    implementation 'org.springframework.boot:spring-boot-starter-test:2.2.4.RELEASE'
+    implementation 'org.springframework.cloud:spring-cloud-stream-test-support:3.0.1.RELEASE'
+    implementation 'org.springframework.kafka:spring-kafka-test:2.4.1.RELEASE'
+    testImplementation(
+            'org.junit.jupiter:junit-jupiter-api:5.4.2'
+    )
+    testRuntime(
+            'org.junit.jupiter:junit-jupiter-engine:5.4.2'
+    )
+}

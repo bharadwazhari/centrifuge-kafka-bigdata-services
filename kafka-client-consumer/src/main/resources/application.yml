@@ -1,0 +1,13 @@
+server:
+  port: 9001
+spring:
+  kafka:
+    consumer:
+        bootstrap-servers: bhari-server:9092
+        group-id: group_id
+        auto-offset-reset: earliest
+        key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+        value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+
+logging:
+  file: /logs/kafka-consumer.log

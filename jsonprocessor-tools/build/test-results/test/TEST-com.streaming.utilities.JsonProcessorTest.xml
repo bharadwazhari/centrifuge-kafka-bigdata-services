@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.streaming.utilities.JsonProcessorTest" tests="1" skipped="1" failures="0" errors="0" timestamp="2019-12-02T20:04:28" hostname="centrifugecorp-work-pc" time="166.214">
+  <properties/>
+  <testcase name="processPropertiesJsonTest()" classname="com.streaming.utilities.JsonProcessorTest" time="166.214">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
