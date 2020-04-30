@@ -11,7 +11,7 @@ public class WordCountProcessor implements Processor<String, String> {
     public void init(ProcessorContext processorContext) {
         context = processorContext;
         //processorContext.schedule();
-        store = (KeyValueStore<String, Long>) processorContext.getStateStore("Counts");
+        store = (KeyValueStore<String, Long>) processorContext.getStateStore("COUNTS");
     }
 
     @Override
